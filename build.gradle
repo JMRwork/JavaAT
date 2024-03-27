@@ -1,0 +1,22 @@
+plugins {
+    id 'java'
+}
+
+group = 'br.edu.infnet'
+version = '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'com.sparkjava:spark-core:2.9.3'
+    implementation 'io.github.openfeign:feign-core:13.2.1'
+    implementation 'io.github.openfeign:feign-gson:13.2.1'
+    testImplementation platform('org.junit:junit-bom:5.9.1')
+    testImplementation 'org.junit.jupiter:junit-jupiter'
+}
+
+test {
+    useJUnitPlatform()
+}
